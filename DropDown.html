@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>My first dropdown menu using select tab project</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1{
+        margin-bottom: 50px;
+        display: flex;
+    }
+    input{
+        margin-top: 20px;
+        font-style: italic;
+        color: brown;
+    }
+
+</style>
+</head>
+<script>
+function favsport() {
+var mylist = document.getElementById("mySportList");
+document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text;
+}
+</script>
+
+<body>
+    <h1>DROPDOWN SPORT SELECTION </h1>
+<form>
+<b> Select you favourite game or sport using the dropdown list </b>
+<select id = "mySportList" onchange = "favsport()" >
+    <option> ---Choose sport--- </option>
+    <option>swimming</option>
+    <option>cycling</option>
+    <option>tennis</option>
+    <option>boxing</option>
+    <option>shooting</option>
+    <option>equestrian jumping</option>
+    <option>sailing</option>
+    <option>rhythmic gymnastics</option>
+    <option>judo</option>
+    <option>golf</option>
+    <option>snooker</option>
+    <option>basketball</option>
+    <option>football </option>
+    <option>volleyball</option>
+    <option>baseball</option>
+    <option>ski jumping </option>
+    <option>figure skating</option>
+    <option>bobsleigh</option>
+    <option>synchronized swimming</option>
+    <option>rowing </option>
+    <option>kayak slalom</option>
+    <option> biathlon </option>
+    <option>triathalon</option>
+    <option>cross-country skiing</option>
+    <option>downhill skiing</option>
+    <option>snowboarding</option>
+    <option>ice hockey</option>
+    <option>curling</option>
+    <option>table tennis</option>
+    <option>gymnastics </option>
+    <option>bowling </option>
+    <option>athletics</option>
+    <option>freestyle wrestling </option>
+    <option>weightlifting </option>
+    <option>fencing </option>
+    <option>archery </option>
+    <option>badminton </option>
+    <option>field hockey </option>
+    <option>diving </option>
+    <option>cricket</option>
+
+</select>
+<p> Your selected sport is: 
+<input type = "text" id = "favourite" size = "20"> </p>
+</form>
+</body>
+</html>
+
+ 
